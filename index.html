@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/property.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Formilário de imóveis</title>
+</head>
+<body>
+    
+    <form onsubmit="app.addProperty()">
+        <div class="main">
+            <h1>Formulário de imóveis</h1>
+            <hr>
+            <p>
+                <label>Tipo de imóvel:
+                    <select class="options" name="type" required>
+                        <option value="Apê">Apartamento</option>
+                        <option value="Casa">Casa</option>
+                    </select>
+                </label>
+            </p>
+            
+            <p>
+                <label>Área do imóvel:
+                    <input type="number" name="area" step="any" min="0" required>
+                </label>
+            </p>
+            
+            <p>
+                <label>Alugado
+                    <input type="checkbox" name="rented">
+                </label>
+            </p>
+            
+                <button type="submit">Salvar</button>
+                <button type="button" onclick="app.cleanForm()">Limpar</button>
+
+            <div class="list">
+                <h2>Lista de imóveis</h3>
+                <hr>
+                <ul id="propertiesList">
+                </ul>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>
