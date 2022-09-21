@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*-- Body img --*/
+body {
+    background-image: url(imovel-image.jpg);
+    background-repeat:  no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/*-- Form content --*/
+.main {
+    background-color: rgba(108, 136, 108, 0.5);
+    color: white;
+    width: 450px;
+    margin: 55px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main h1 {
+    text-align: center;
+}
+
+.main p {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.options, input[type=number] {
+    width: 200px;
+    padding: 2px;
+    border: none;
+    border-radius: 4px;
+    background-color: #d8d5d5;
+}
+
+button {
+    background-color: rgba(108, 136, 108);
+    font-weight: bold;
+    color: hsl(171, 100%, 41%);
+    margin: 10px 10px 0px 10px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 209, 178);
+    transition: 0.15s;
+}
+
+button:hover {
+    background-color: hsl(171, 100%, 41%);
+    color: black;
+}
+/*-- List content --*/
+.list {
+    background-color: rgb(77, 73, 73, 0.5);
+    color: white;
+    margin-top: 25px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    min-height: 290px;
+}
+
+.list h2 {
+    text-align: center;
+}
+
+.list ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;           
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+}
+
+.list li {
+    margin: 10px;
+    font-size: 18px;
+}
+
+.list li span {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.removeButton {
+    background-color: rgb(77, 73, 73, 0.2);
+    color: #ff0043;
+    border: 1px solid #ff0043;
+    margin: 5px 0px;
+    padding: 5px 15px;
+    width: 100%
+}
+
+.removeButton:hover {
+    background-color: #ff0043;
+    color: black;
+}
+/*-- Media Query --*/
+@media (max-width: 1024px) {
+    .list {
+        min-height: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        width: 50%;
+    }
+}
+
+@media (max-width: 696px) {
+    .options, input[type=number] {
+        display: block;
+        width: 100%;
+    }
+
+    .list {
+        height: auto;
+    }
+}
+
+@media (max-width: 424px) {
+    .main {
+        width: 212px;
+    }
+    button {
+        width: 100%;
+        position: relative;
+        right: 10px;
+    }
+}
