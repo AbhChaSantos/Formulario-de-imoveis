@@ -4,7 +4,7 @@
 }
 /*-- Body img --*/
 body {
-    background-image: url(imovel-image.jpg);
+    background-image: url(images/imovel-image.jpg);
     background-repeat:  no-repeat;
     background-position: center;
     background-attachment: fixed;
